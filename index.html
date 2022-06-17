@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Order summary card</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Arvo", serif;
+      }
+      p {
+        font-size: 16px;
+      }
+      #main-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #main-section .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background: url(images/pattern-background-desktop.svg),
+          hsl(225, 100%, 94%);
+        background-size: 100%, auto;
+        background-position: top, top;
+        background-repeat: no-repeat, no-repeat;
+      }
+      #main-section .card-container .card {
+        border-radius: 20px;
+        max-width: 400px;
+        overflow: hidden;
+      }
+      #main-section .card-container .card .hero img {
+        width: 100%;
+      }
+      #main-section .card-container .card .card-body {
+        text-align: center;
+        padding: 20px 38px;
+        background: whitesmoke;
+        margin-top: -4px;
+      }
+      #main-section .card-container .card .card-body > p {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.4);
+        margin: 20px 0px;
+      }
+      #main-section .card-container .card .card-body .plan {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 10px;
+        background: hsl(225, 100%, 98%);
+        border-radius: 20px;
+        margin: 20px 0px;
+      }
+      #main-section .card-container .card .card-body .plan .text {
+        text-align: left;
+        color: rgba(0, 0, 0, 0.4);
+      }
+      #main-section .card-container .card .card-body .plan .action > a:hover {
+        color: hsl(245, 75%, 52%, 0.7);
+      }
+      #main-section .card-container .card .card-body .button-section {
+        padding: 20px 0px;
+      }
+      #main-section .card-container .card .card-body .button-section a {
+        color: white;
+        padding: 10px 8px;
+        font-weight: 700;
+        text-decoration: none;
+        background: hsl(245, 75%, 52%);
+        display: block;
+        border-radius: 5px;
+        box-shadow: 0px 10px 13px 0px hsl(245, 75%, 52%, 0.3);
+      }
+      #main-section .card-container .card .card-body .button-section a:hover {
+        background: hsl(245, 75%, 52%, 0.7);
+      }
+      #main-section .card-container .card .card-body .cancel > a {
+        color: hsl(224, 23%, 55%);
+        font-weight: 700;
+        margin-top: 20px;
+        display: block;
+        text-decoration: none;
+      }
+      @media only screen and (max-width: 375px) {
+        #main-section .card-container {
+          padding: 0px 10px;
+        }
+        #main-section .card-container .card .card-body {
+          text-align: center;
+          padding: 20px 15px;
+          background: whitesmoke;
+          margin-top: -4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="main-section">
+      <div class="card-container">
+        <div class="card">
+          <div class="hero">
+            <img src="images/illustration-hero.svg" alt="hero-image" />
+          </div>
+          <div class="card-body">
+            <h1 class="card-title">Order Summary</h1>
+            <p>
+              You can now listen to millions of song,audio books and podcasts on
+              any devices, anywhere you like.
+            </p>
+            <span class="plan">
+              <div class="image">
+                <img src="/images/icon-music.svg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Annual Plan</h3>
+                <p>$59.99/year</p>
+              </div>
+              <div class="action">
+                <a href="#">Change</a>
+              </div>
+            </span>
+            <span class="button-section">
+              <a href="#">Proceed To Payment</a>
+            </span>
+            <span class="cancel">
+              <a href="#"> Cancel Order </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
